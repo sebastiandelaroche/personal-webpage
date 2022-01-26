@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
+import { useTranslation } from 'react-i18next';
 
-type HeaderProps = {
-  name?: string;
-  titles?: Array<string>;
-};
-
-export const Header: React.FC<HeaderProps> = ({ name, titles = [] }) => {
-  const [isChecked, setIsChecked] = useState(false);
+export const Header: React.FC = () => {
+  const { t } = useTranslation();
+  const [isChecked, setIsChecked] = useState(true);
+  const titles = t('titles').split(',');
   const stepTitles = titles.map(title => [title.toUpperCase(), 1500]).flat();
 
   const onThemeSwitchChange = (checked: boolean) => {
@@ -37,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({ name, titles = [] }) => {
               <span className='iconify header-icon' data-icon='la:laptop-code' data-inline='false'></span>
               <br/>
               <h1 className='mb-0'>
-                <Typical steps={[name]} wrapper='p' />
+                <Typical steps={[t('name')]} wrapper='p' />
               </h1>
               <div className='title-container'>
                 <HeaderTitleTypeAnimation />
