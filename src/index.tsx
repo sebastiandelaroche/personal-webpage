@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { App } from './App';
 import reportWebVitals from './reportWebVitals';
+
+import './index.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// TODO: investigate a better way to do this (for React ecosystem)
+
+/* GLOBAL VARIABLES */
+const globalThis = window as any;
+globalThis.$primaryLanguage = 'en';
+globalThis.$secondaryLanguage = 'pl';
+globalThis.$primaryLanguageIconId = 'primary-lang-icon';
+globalThis.$secondaryLanguageIconId = 'secondary-lang-icon';
 
 ReactDOM.render(
   <React.StrictMode>

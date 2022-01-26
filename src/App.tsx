@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
+import { useFetchPortfolioData } from './hooks/useFetchPortfolioData';
+import { Header } from './components/Header';
 
-function App() {
+import './App.scss';
+
+export const App: React.FunctionComponent = () => {
+  const { data } = useFetchPortfolioData();
+  console.log('data', data);
+
   return (
-    <div className="App">
-      Building web page...
+    <div>
+      <Header name={data?.name} titles={data?.titles} />
     </div>
   );
 }
-
-export default App;
