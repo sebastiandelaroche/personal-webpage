@@ -1,27 +1,19 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Icon } from '@iconify/react';
 import angularIcon from '@iconify/icons-logos/angular-icon';
 import reactIcon from '@iconify/icons-logos/react';
-import vueIcon from '@iconify/icons-logos/vue';
 
-type AboutProps = {
-  avatar: string;
-  name: string;
-  greeting: string;
-  description: string;
-};
+const AVATAR_URL = 'avatar_pic.jpeg';
 
-export const About: React.FC<AboutProps> = ({
-  avatar,
-  name,
-  greeting,
-  description
-}) => {
+export const About: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id='about'>
       <div className='col-md-12'>
         <h1 style={{ color: 'black' }}>
-          <span>{name}</span>
+          <span>{t('about')}</span>
         </h1>
         <div className='row center mx-auto mb-5'>
           <div className='col-md-4 mb-5 center'>
@@ -29,7 +21,7 @@ export const About: React.FC<AboutProps> = ({
               <span style={{ cursor: 'auto' }}>
                 <img
                   height='250px'
-                  src={avatar}
+                  src={AVATAR_URL}
                   alt='Avatar placeholder'
                 />
                 <Icon
@@ -38,10 +30,6 @@ export const About: React.FC<AboutProps> = ({
                 />
                 <Icon
                   icon={reactIcon}
-                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
-                />
-                <Icon
-                  icon={vueIcon}
                   style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
                 />
               </span>
@@ -79,10 +67,10 @@ export const About: React.FC<AboutProps> = ({
                   }}
                 >
                   <br />
-                  <span className='wave'>{greeting} :) </span>
+                  <span className='wave'>{t('greeting')} :) </span>
                   <br />
                   <br />
-                  {description}
+                  {t('description')}
                 </div>
               </div>
             </div>
