@@ -41,7 +41,8 @@ export const Work: React.FC<WorkProps> = ({
         color: '#fff',
         textAlign: 'center',
       }}
-      icon={<i className='fab fa-angular experience-icon'></i>}
+      // icon={<i className='fab fa-angular experience-icon'></i>}
+      icon={<img width={50} src='coding.png'/>}
     >
       <div style={{ textAlign: 'left', marginBottom: '4px' }}>
         {mainTechs.map(({ name }, index) => (

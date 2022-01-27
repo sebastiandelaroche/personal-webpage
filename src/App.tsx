@@ -4,6 +4,7 @@ import { Languages } from './components/Languages';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
+import { Footer } from './components/Footer';
 
 import './App.scss';
 
@@ -15,6 +16,7 @@ export const App: React.FunctionComponent = () => {
       <About />
       <Skills />
       <Experience />
+      <Footer />
     </div>
   );
 }

@@ -30,11 +30,6 @@ export const SKILLS = [
     level: 100
   },
   {
-    name: 'Solidity',
-    icon: '',
-    level: 100
-  },
-  {
     name: 'React.js',
     icon: 'devicon-react-original',
     level: 100
@@ -62,16 +57,6 @@ export const SKILLS = [
   {
     name: 'Express.js',
     icon: 'devicon-express-original',
-    level: 100
-  },
-  {
-    name: 'TypeOrm',
-    icon: '',
-    level: 100
-  },
-  {
-    name: 'Mikro Orm',
-    icon: '',
     level: 100
   },
   {
@@ -116,7 +101,7 @@ export const SKILLS = [
   },
   {
     name: 'AWS',
-    icon: '',
+    icon: 'devicon-amazonwebservices-original',
     level: 100
   },
   {
@@ -127,11 +112,6 @@ export const SKILLS = [
   {
     name: 'Digital Ocean',
     icon: 'devicon-digitalocean-plain',
-    level: 100
-  },
-  {
-    name: 'RabbitMQ',
-    icon: '',
     level: 100
   },
   {
@@ -157,6 +137,46 @@ export const SKILLS = [
   {
     name: 'CircleCI',
     icon: 'devicon-circleci-plain',
+    level: 100
+  },
+  {
+    name: 'Jest',
+    icon: 'devicon-jest-plain',
+    level: 100
+  },
+  {
+    name: 'Mocha',
+    icon: 'devicon-mocha-plain',
+    level: 100
+  },
+  {
+    name: 'HTML5',
+    icon: 'devicon-html5-plain',
+    level: 100
+  },
+  {
+    name: 'Css3',
+    icon: 'devicon-css3-plain',
+    level: 100
+  },
+  {
+    name: 'Chai',
+    icon: 'devicon-mocha-plain',
+    level: 100
+  },
+  {
+    name: 'TypeOrm',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'Mikro Orm',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'RabbitMQ',
+    icon: '',
     level: 100
   },
   {
@@ -216,6 +236,31 @@ export const SKILLS = [
   },
   {
     name: 'TDD',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'Blockchain',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'Ethereum',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'Brownie',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'Solidity',
+    icon: '',
+    level: 100
+  },
+  {
+    name: 'Team Lead',
     icon: '',
     level: 100
   },
