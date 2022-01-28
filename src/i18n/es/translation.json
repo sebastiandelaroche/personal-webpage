@@ -1,4 +1,9 @@
 {
   "name": "Sebastian De La Roche",
-  "titles": "Senior Software Engineer,BackEnd Developer,FrontEnd Developer,FullStack Developer,Software Architect,BlockChain Developer,DevOps Developer"
+  "titles": "Software Architect,FullStack Developer,BackEnd Developer,FrontEnd Developer,DevOps,BlockChain Developer",
+  "about": "Acerca de mí",
+  "greeting": "Hola 👋",
+  "description": "🤙 Soy Sebastian De La Roche, tengo más de 8 años disfrutando ser parte de la industria TI, tengo experiencia como Diseñador de Software, Desarrollador FullStack, Desarrollador Backend, Desarrollador Frontend, DevOps, Team Lead, y últimamente estoy aprendiendo todo sobre Blockchain/Web3.0. Me gusta aprender cosas nuevas todo el tiempo, especialmente cosas relacionadas con mi profesión, amo lo que hago y siempre estoy buscando formas de mejorar mi técnica como artesano de software. 🧙‍♂️.",
+  "skillTitle": "Habilidades",
+  "experienceTitle": "Experiencia"
 }

@@ -1,0 +1,14 @@
+$small: 300px;
+$medium: 1170px;
+
+.icon {
+  width: 50px;
+  filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(68deg) brightness(112%) contrast(100%);
+
+  @media screen and (max-width: $small) {
+    width: 31px;
+  }
+  @media screen and (max-width: $medium) {
+    width: 31px;
+  }
+}

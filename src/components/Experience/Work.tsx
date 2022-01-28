@@ -2,6 +2,8 @@ import React from 'react';
 import { Badge } from 'react-bootstrap';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
+import './Work.scss';
+
 type TechProps = {
   name: string;
   isMain?: boolean;
@@ -42,7 +44,7 @@ export const Work: React.FC<WorkProps> = ({
         textAlign: 'center',
       }}
       // icon={<i className='fab fa-angular experience-icon'></i>}
-      icon={<img width={50} src='coding.png'/>}
+      icon={<img src='coding.svg' className='icon'/>}
     >
       <div style={{ textAlign: 'left', marginBottom: '4px' }}>
         {mainTechs.map(({ name }, index) => (

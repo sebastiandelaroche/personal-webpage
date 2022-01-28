@@ -3,6 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { Icon } from '@iconify/react';
 import angularIcon from '@iconify/icons-logos/angular-icon';
 import reactIcon from '@iconify/icons-logos/react';
+import nodejsIcon from '@iconify/icons-logos/nodejs';
+import typescriptIcon from '@iconify/icons-logos/typescript-icon';
+import javascriptIcon from '@iconify/icons-logos/javascript';
 
 const AVATAR_URL = 'avatar_pic.jpeg';
 
@@ -21,15 +24,28 @@ export const About: React.FC = () => {
               <span style={{ cursor: 'auto' }}>
                 <img
                   height='250px'
+                  style={{ maxWidth: 'none' }}
                   src={AVATAR_URL}
-                  alt='Avatar placeholder'
+                  alt='Sebastian De La Roche'
                 />
                 <Icon
-                  icon={angularIcon}
+                  icon={javascriptIcon}
+                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                />
+                <Icon
+                  icon={typescriptIcon}
+                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                />
+                <Icon
+                  icon={nodejsIcon}
                   style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
                 />
                 <Icon
                   icon={reactIcon}
+                  style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
+                />
+                <Icon
+                  icon={angularIcon}
                   style={{ fontSize: '400%', margin: '9% 5% 0 5%' }}
                 />
               </span>
@@ -67,7 +83,7 @@ export const About: React.FC = () => {
                   }}
                 >
                   <br />
-                  <span className='wave'>{t('greeting')} :) </span>
+                  <span className='wave'>{t('greeting')}</span>
                   <br />
                   <br />
                   {t('description')}
